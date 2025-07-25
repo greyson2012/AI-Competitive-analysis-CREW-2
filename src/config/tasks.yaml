@@ -1,0 +1,156 @@
+market_intelligence_task:
+  description: >
+    Conduct comprehensive market intelligence gathering for the AI industry:
+    
+    1. Search for recent AI industry news, breakthroughs, and developments (last 7 days)
+    2. Identify significant funding rounds, acquisitions, and strategic partnerships
+    3. Monitor regulatory changes and policy developments affecting AI deployment
+    4. Track emerging technologies and research breakthroughs with commercial potential
+    5. Analyze market adoption trends in target industries: {target_industries}
+    
+    For each finding:
+    - Assess relevance score (0.0-1.0) based on potential business impact
+    - Categorize by type (research, funding, regulation, technology, market_trend)
+    - Provide clear, concise summaries with key implications
+    - Include source URLs for verification
+    
+    Focus on developments that could create opportunities or threats for companies 
+    offering: {company_offerings}
+    
+  expected_output: >
+    A structured JSON report containing:
+    - Executive summary of key developments
+    - List of market findings with relevance scores
+    - Emerging opportunities and potential threats
+    - Recommended areas for deeper investigation
+    
+    Each finding should include: title, summary, category, relevance_score, source_url, and implications.
+
+competitor_intelligence_task:
+  description: >
+    Monitor and analyze competitive landscape developments:
+    
+    1. Track competitor activities for: {competitors}
+    2. Identify new product launches, feature updates, and service announcements
+    3. Monitor pricing changes and positioning shifts
+    4. Analyze partnership announcements and strategic alliances
+    5. Track hiring patterns and team expansion indicators
+    6. Assess customer wins, case studies, and market share changes
+    
+    For each competitor update:
+    - Evaluate impact level: low, medium, high, or critical
+    - Analyze implications for our competitive position
+    - Identify potential response strategies
+    - Assess urgency of strategic response needed
+    
+    Focus on competitors offering similar services: {company_offerings}
+    
+  expected_output: >
+    A comprehensive competitive intelligence report including:
+    - Summary of significant competitor moves
+    - Impact assessment for each development
+    - Competitive threat analysis
+    - Strategic response recommendations
+    - Market positioning insights
+    
+    Each update should include: company_name, update_type, description, impact_level, and strategic_implications.
+
+trend_analysis_task:
+  description: >
+    Analyze market trends and patterns to identify emerging opportunities:
+    
+    1. Review historical data from the last 2-6 months to identify patterns
+    2. Analyze current market intelligence and competitor data for trend signals
+    3. Calculate trend momentum scores based on frequency, growth, and market adoption
+    4. Identify cross-industry trend convergence opportunities
+    5. Predict future market directions and technology adoption curves
+    6. Validate trends with multiple data sources and evidence points
+    
+    Focus on trends relevant to:
+    - Target industries: {target_industries}
+    - Core competencies: {core_competencies}
+    - Growth objectives: market expansion, new services, technology leadership
+    
+    For each trend:
+    - Calculate momentum score (0.0-1.0) based on strength and growth trajectory
+    - Provide evidence supporting the trend identification
+    - Estimate timeline for market adoption and maturity
+    - Assess relevance to our business model and capabilities
+    
+  expected_output: >
+    A trend analysis report containing:
+    - Executive summary of key emerging trends
+    - Detailed trend analysis with momentum scores
+    - Evidence and supporting data for each trend
+    - Timeline predictions and adoption forecasts
+    - Business impact assessment and opportunity identification
+    
+    Each trend should include: trend_name, category, momentum_score, evidence, prediction, and business_implications.
+
+strategic_synthesis_task:
+  description: >
+    Synthesize all intelligence into strategic recommendations and opportunities:
+    
+    1. Review and analyze all market intelligence, competitor updates, and trend data
+    2. Identify market gaps and unmet customer needs in target industries
+    3. Evaluate opportunities against our competitive advantages: {competitive_advantages}
+    4. Assess alignment with growth objectives: {growth_objectives}
+    5. Calculate opportunity scores using multi-factor analysis
+    6. Develop strategic recommendations with clear action items
+    7. Prioritize initiatives based on impact, feasibility, and timing
+    
+    Opportunity scoring criteria (0.0-1.0):
+    - Market size and growth potential (25%)
+    - Competitive landscape favorability (20%) 
+    - Technical fit with capabilities (20%)
+    - Time to market advantage (15%)
+    - Strategic alignment with objectives (20%)
+    
+    For each opportunity:
+    - Provide clear value proposition
+    - Estimate potential revenue impact
+    - Assess implementation complexity and timeline
+    - Identify key success factors and risks
+    - Recommend next steps and resource requirements
+    
+  expected_output: >
+    A comprehensive strategic analysis report including:
+    - Executive summary with key insights and recommendations
+    - Top 5-10 prioritized market opportunities with detailed analysis
+    - Strategic initiatives roadmap with timelines
+    - Competitive positioning recommendations
+    - Risk assessment and mitigation strategies
+    - Resource allocation and investment recommendations
+    
+    Each opportunity should include: title, description, market_gap, score, priority, potential_revenue, 
+    implementation_complexity, time_to_market, and strategic_rationale.
+
+daily_report_task:
+  description: >
+    Compile all analysis into a comprehensive daily intelligence report:
+    
+    1. Synthesize findings from all agents into executive summary
+    2. Highlight critical developments requiring immediate attention
+    3. Present opportunities in order of strategic priority
+    4. Include trend momentum changes and competitive threats
+    5. Provide clear, actionable next steps for leadership team
+    6. Format for both dashboard display and email distribution
+    
+    Report structure:
+    - Executive Summary (key insights in 3-5 bullet points)
+    - Critical Alerts (urgent items requiring attention)
+    - Top Opportunities (3-5 highest scored opportunities)
+    - Market Intelligence Highlights
+    - Competitive Landscape Updates
+    - Emerging Trends Summary
+    - Strategic Recommendations
+    - Action Items and Next Steps
+    
+  expected_output: >
+    A professionally formatted daily intelligence report suitable for:
+    - Executive team consumption
+    - Dashboard visualization
+    - Email distribution
+    - Historical archival and trend analysis
+    
+    The report should be concise, actionable, and focused on strategic decision-making.

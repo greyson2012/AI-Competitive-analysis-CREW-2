@@ -1,0 +1,42 @@
+# Core CrewAI and AI dependencies
+crewai>=0.150.0
+crewai[tools]>=0.150.0
+openai==1.54.3
+langchain==0.3.7
+langchain-openai==0.2.8
+
+# Database
+supabase==2.9.1
+psycopg2-binary==2.9.9
+
+# Web scraping and search
+requests==2.32.3
+beautifulsoup4==4.12.3
+selenium==4.25.0
+lxml==5.3.0
+
+# Data processing
+pandas==2.2.3
+numpy==1.26.4
+python-dateutil==2.9.0
+
+# Streamlit UI
+streamlit==1.39.0
+plotly==5.24.1
+streamlit-option-menu==0.4.0
+streamlit-elements==0.1.0
+
+# Email notifications (built-in modules)
+# smtplib, email.mime.* are built-in Python modules
+
+# Utilities
+python-dotenv==1.0.1
+schedule==1.2.2
+pytz==2024.2
+pydantic==2.9.2
+typing-extensions==4.12.2
+
+# Development
+pytest==8.3.3
+black==24.10.0
+flake8==7.1.1

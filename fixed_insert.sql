@@ -1,0 +1,3 @@
+-- Fixed INSERT statement for analysis_runs (replace the problematic one)
+INSERT INTO analysis_runs (run_date, findings_count, opportunities_identified, key_insights, recommendations, execution_time_seconds, status) VALUES
+('2024-01-20', 12, 3, 'Market showing increased AI adoption in enterprise sector with focus on compliance and integration', '["Develop compliance-focused AI solutions", "Expand integration service offerings", "Monitor regulatory developments closely"]', 45.7, 'completed');
