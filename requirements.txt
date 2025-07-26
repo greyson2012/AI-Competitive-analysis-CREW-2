@@ -1,13 +1,13 @@
 # Core CrewAI and AI dependencies
 crewai>=0.150.0
 crewai[tools]>=0.150.0
-openai==1.54.3
+openai>=1.68.2
 langchain==0.3.7
 langchain-openai==0.2.8
 
 # Database
 supabase==2.9.1
-psycopg2-binary==2.9.9
+psycopg2-binary>=2.9.10
 
 # Web scraping and search
 requests==2.32.3
