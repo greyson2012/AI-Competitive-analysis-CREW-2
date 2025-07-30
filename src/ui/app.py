@@ -1,10 +1,13 @@
 """
 Main Streamlit application for competitive analysis dashboard
 """
+# Set ChromaDB backend to avoid SQLite version issues
+import os
+os.environ["CHROMA_DB_IMPL"] = "duckdb"
+
 import streamlit as st
 import asyncio
 import sys
-import os
 from datetime import datetime, date, timedelta
 import pandas as pd
 import plotly.express as px
